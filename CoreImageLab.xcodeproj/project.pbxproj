@@ -14,6 +14,9 @@
 		AB9D6AED27235A1D006AFD57 /* CoreImageLab.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AB9D6AEB27235A1D006AFD57 /* CoreImageLab.xcdatamodeld */; };
 		AB9D6AEF27235A1F006AFD57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB9D6AEE27235A1F006AFD57 /* Assets.xcassets */; };
 		AB9D6AF227235A1F006AFD57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB9D6AF027235A1F006AFD57 /* LaunchScreen.storyboard */; };
+		AB9D6AFC27235FFD006AFD57 /* ModAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9D6AFB27235FFD006AFD57 /* ModAViewController.swift */; };
+		AB9D6AFE2723601A006AFD57 /* ModBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9D6AFD2723601A006AFD57 /* ModBViewController.swift */; };
+		AB9D6B002723612E006AFD57 /* VideoAnalgesic.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9D6AFF2723612E006AFD57 /* VideoAnalgesic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		AB9D6AEE27235A1F006AFD57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB9D6AF127235A1F006AFD57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB9D6AF327235A1F006AFD57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB9D6AFB27235FFD006AFD57 /* ModAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModAViewController.swift; sourceTree = "<group>"; };
+		AB9D6AFD2723601A006AFD57 /* ModBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModBViewController.swift; sourceTree = "<group>"; };
+		AB9D6AFF2723612E006AFD57 /* VideoAnalgesic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoAnalgesic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +72,9 @@
 				AB9D6AF027235A1F006AFD57 /* LaunchScreen.storyboard */,
 				AB9D6AF327235A1F006AFD57 /* Info.plist */,
 				AB9D6AEB27235A1D006AFD57 /* CoreImageLab.xcdatamodeld */,
+				AB9D6AFB27235FFD006AFD57 /* ModAViewController.swift */,
+				AB9D6AFD2723601A006AFD57 /* ModBViewController.swift */,
+				AB9D6AFF2723612E006AFD57 /* VideoAnalgesic.swift */,
 			);
 			path = CoreImageLab;
 			sourceTree = "<group>";
@@ -142,8 +151,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB9D6AED27235A1D006AFD57 /* CoreImageLab.xcdatamodeld in Sources */,
+				AB9D6B002723612E006AFD57 /* VideoAnalgesic.swift in Sources */,
 				AB9D6AE727235A1D006AFD57 /* ViewController.swift in Sources */,
+				AB9D6AFE2723601A006AFD57 /* ModBViewController.swift in Sources */,
 				AB9D6AE327235A1D006AFD57 /* AppDelegate.swift in Sources */,
+				AB9D6AFC27235FFD006AFD57 /* ModAViewController.swift in Sources */,
 				AB9D6AE527235A1D006AFD57 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
