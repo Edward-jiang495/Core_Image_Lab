@@ -15,7 +15,7 @@ class ModAViewController: UIViewController {
     var filters : [CIFilter]! = nil
     lazy var videoManager:VideoAnalgesic! = {
          let tmpManager = VideoAnalgesic(mainView: self.view)
-         tmpManager.setCameraPosition(position: .back)
+         tmpManager.setCameraPosition(position: .front)
          return tmpManager
      }()
     
@@ -38,6 +38,7 @@ class ModAViewController: UIViewController {
         self.view.backgroundColor = nil
            
         self.videoManager.setProcessingBlock(newProcessBlock: self.processImage)
+        
            
         if !videoManager.isRunning{
             videoManager.start()
@@ -46,15 +47,33 @@ class ModAViewController: UIViewController {
     }
     
     func processImage(inputImage:CIImage) -> CIImage{
+        let faces = detector.features(in: inputImage)
+
+        if let face = faces.first as? CIFaceFeature {
+            print("Found face at \(face.bounds)")
+
+            if face.hasLeftEyePosition {
+                print("Found left eye at \(face.leftEyePosition)")
+            }
+
+            if face.hasRightEyePosition {
+                print("Found right eye at \(face.rightEyePosition)")
+            }
+
+            if face.hasMouthPosition {
+                print("Found mouth at \(face.mouthPosition)")
+            }
+        }
+        return inputImage
         
         // detect faces
-        let faces = getFaces(img: inputImage)
-        
-        // if no faces, just return original image
-        if faces.count == 0 { return inputImage }
-        
-        //otherwise apply the filters to the faces
-        return applyFiltersToFaces(inputImage: inputImage, features: faces)
+//        let faces = getFaces(img: inputImage)
+//
+//        // if no faces, just return original image
+//        if faces.count == 0 { return inputImage }
+//
+//        //otherwise apply the filters to the faces
+//        return applyFiltersToFaces(inputImage: inputImage, features: faces)
     }
     
 //    func setupFilters(){

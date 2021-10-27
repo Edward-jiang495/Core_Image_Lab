@@ -342,10 +342,12 @@ class VideoAnalgesic: NSObject, AVCaptureVideoDataOutputSampleBufferDelegate, AV
             if (device.hasTorch && device.torchMode == AVCaptureDevice.TorchMode.on) {
                 do {
                     try device.lockForConfiguration()
+                    device.torchMode = AVCaptureDevice.TorchMode.off
+                    device.unlockForConfiguration()
+                    
                 } catch _ {
                 }
-                device.torchMode = AVCaptureDevice.TorchMode.off
-                device.unlockForConfiguration()
+               
             }
         }
     }

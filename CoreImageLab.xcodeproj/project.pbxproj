@@ -15,8 +15,10 @@
 		AB9D6AEF27235A1F006AFD57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB9D6AEE27235A1F006AFD57 /* Assets.xcassets */; };
 		AB9D6AF227235A1F006AFD57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB9D6AF027235A1F006AFD57 /* LaunchScreen.storyboard */; };
 		AB9D6AFC27235FFD006AFD57 /* ModAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9D6AFB27235FFD006AFD57 /* ModAViewController.swift */; };
-		AB9D6AFE2723601A006AFD57 /* ModBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9D6AFD2723601A006AFD57 /* ModBViewController.swift */; };
 		AB9D6B002723612E006AFD57 /* VideoAnalgesic.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9D6AFF2723612E006AFD57 /* VideoAnalgesic.swift */; };
+		AB9D6B022729F94E006AFD57 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB9D6B012729F94E006AFD57 /* opencv2.framework */; };
+		AB9D6B0B2729FA4A006AFD57 /* OpenCVBridge.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB9D6B0A2729FA4A006AFD57 /* OpenCVBridge.mm */; };
+		AB9D6B0E2729FB24006AFD57 /* ModBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9D6B0D2729FB24006AFD57 /* ModBViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,8 +32,13 @@
 		AB9D6AF127235A1F006AFD57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB9D6AF327235A1F006AFD57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB9D6AFB27235FFD006AFD57 /* ModAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModAViewController.swift; sourceTree = "<group>"; };
-		AB9D6AFD2723601A006AFD57 /* ModBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModBViewController.swift; sourceTree = "<group>"; };
 		AB9D6AFF2723612E006AFD57 /* VideoAnalgesic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoAnalgesic.swift; sourceTree = "<group>"; };
+		AB9D6B012729F94E006AFD57 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		AB9D6B082729FA42006AFD57 /* OpenCVBridge.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = OpenCVBridge.hh; sourceTree = "<group>"; };
+		AB9D6B092729FA49006AFD57 /* CoreImageLab-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CoreImageLab-Bridging-Header.h"; sourceTree = "<group>"; };
+		AB9D6B0A2729FA4A006AFD57 /* OpenCVBridge.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCVBridge.mm; sourceTree = "<group>"; };
+		AB9D6B0C2729FA59006AFD57 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		AB9D6B0D2729FB24006AFD57 /* ModBViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModBViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB9D6B022729F94E006AFD57 /* opencv2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +56,7 @@
 		AB9D6AD627235A1D006AFD57 = {
 			isa = PBXGroup;
 			children = (
+				AB9D6B012729F94E006AFD57 /* opencv2.framework */,
 				AB9D6AE127235A1D006AFD57 /* CoreImageLab */,
 				AB9D6AE027235A1D006AFD57 /* Products */,
 			);
@@ -73,8 +82,12 @@
 				AB9D6AF327235A1F006AFD57 /* Info.plist */,
 				AB9D6AEB27235A1D006AFD57 /* CoreImageLab.xcdatamodeld */,
 				AB9D6AFB27235FFD006AFD57 /* ModAViewController.swift */,
-				AB9D6AFD2723601A006AFD57 /* ModBViewController.swift */,
 				AB9D6AFF2723612E006AFD57 /* VideoAnalgesic.swift */,
+				AB9D6B082729FA42006AFD57 /* OpenCVBridge.hh */,
+				AB9D6B0A2729FA4A006AFD57 /* OpenCVBridge.mm */,
+				AB9D6B092729FA49006AFD57 /* CoreImageLab-Bridging-Header.h */,
+				AB9D6B0C2729FA59006AFD57 /* PrefixHeader.pch */,
+				AB9D6B0D2729FB24006AFD57 /* ModBViewController.swift */,
 			);
 			path = CoreImageLab;
 			sourceTree = "<group>";
@@ -111,6 +124,7 @@
 				TargetAttributes = {
 					AB9D6ADE27235A1D006AFD57 = {
 						CreatedOnToolsVersion = 13.0;
+						LastSwiftMigration = 1300;
 					};
 				};
 			};
@@ -153,10 +167,11 @@
 				AB9D6AED27235A1D006AFD57 /* CoreImageLab.xcdatamodeld in Sources */,
 				AB9D6B002723612E006AFD57 /* VideoAnalgesic.swift in Sources */,
 				AB9D6AE727235A1D006AFD57 /* ViewController.swift in Sources */,
-				AB9D6AFE2723601A006AFD57 /* ModBViewController.swift in Sources */,
 				AB9D6AE327235A1D006AFD57 /* AppDelegate.swift in Sources */,
+				AB9D6B0E2729FB24006AFD57 /* ModBViewController.swift in Sources */,
 				AB9D6AFC27235FFD006AFD57 /* ModAViewController.swift in Sources */,
 				AB9D6AE527235A1D006AFD57 /* SceneDelegate.swift in Sources */,
+				AB9D6B0B2729FA4A006AFD57 /* OpenCVBridge.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,6 +232,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -278,6 +294,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -303,9 +320,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = F69WJ27LN4;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CoreImageLab/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -321,6 +344,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = CS5323.CoreImageLab;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "CoreImageLab/CoreImageLab-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -331,9 +356,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = F69WJ27LN4;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CoreImageLab/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -349,6 +380,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = CS5323.CoreImageLab;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "CoreImageLab/CoreImageLab-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
